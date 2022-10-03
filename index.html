@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" action="">
+        
+        <fieldset>
+            <legend>Info personnel</legend>
+            <label for="Prenom">Prénom :</label>
+            <input type="text" name="Prenom" maxlength="20" minlength="2" placeholder="Entrée votre prénom" id="prenom">
+            <br>
+            <label for="Nom">Nom :</label>
+            <input type="text" name="Nom" maxlength="20" minlength="2" placeholder="Entrée votre Nom" id="Nom">
+            <br>
+            <label for="UserEmail">Email :</label>
+            <input type="email" name="UserEmail" id="UserEmail" placeholder="Entrée votre Email">
+            <br>
+            <label for="UserPhone">Téléphone :</label>
+            <input type="tel" name="UserPhone" id="UserPhone" placeholder="Entrée votre Télephone">
+            <br>
+            <label for="MDP">Mot de passe :</label>
+            <input type="password" name="MDP" id="MDP" placeholder="Entrée votre Mot de passe">
+            <br>
+            <label for="Age">Age :</label>
+            <input type="number" name="Age" id="Age" placeholder="Entrée votre age">
+            <br>
+            <label for="Commentaire">laissez un commentaire :</label>
+            <br>
+            <textarea name="Commentaire" id="Commentaire" cols="70" rows="10"></textarea>
+            <br>
+            <label for="DateDuCommentaire">Date Du Commentaire :</label>
+            <input type="date" name="DateDuCommentaire" id="DateDuCommentaire" placeholder="Entrée votre age">
+            <br>
+            <label for="PhotoDeLutilisateur">Photo De L'utilisateur :</label>
+            <input type="file" name="PhotoDeLutilisateur" id="PhotoDeLutilisateur" placeholder="Choisir un fichier" accept=".png, .jpeg, .gif">      
+        </fieldset>
+        <fieldset>
+            <legend>Vous aimez :</legend>
+            <input type="checkbox" id="checkAimezHtml" name="checkAimezHtml" checked>
+            <label for="checkAimezHtml">Le Html</label>
+            <br>
+            <input type="checkbox" id="checkAimezCss" name="checkAimezCss">
+            <label for="checkAimezCss">Le Css</label>
+            <br>
+            <input type="checkbox" id="checkAimezJs" name="checkAimezJs">
+            <label for="checkAimezJs">Le Javascript</label>
+            <br>
+            <input type="checkbox" id="checkAimezRien" name="checkAimezRien">
+            <label for="checkAimezRien"> Ne rien faire</label>
+        </fieldset>
+        <fieldset>
+            <legend>Vous vous levez</legend>
+            <input type="radio" id="matin" name="levez">
+            <label for="matin">Le matin</label>
+            <br>
+            <input type="radio" id="midi" name="levez">
+            <label for="midi">Le midi</label>
+            <br>
+            <input type="radio" id="soir" name="levez">
+            <label for="soir">Le soir</label>
+            <br>
+            <input type="radio" id="enRetard" name="levez">
+            <label for="enRetard">En Retard</label>
+        </fieldset>
+        <fieldset>
+            <legend>Fin de formulaire</legend>
+            <select name="assez" id="assez">
+                <optgroup label="Team pas encore">
+                    <option value="jenVeuxPlus">J'en veux plus</option>
+                    <option value="super">C'est super !</option>    
+                </optgroup>
+                <optgroup label="Team oula">
+                    <option value="jpp">J'en ai marre</option>
+                    <option value="alèd">Pitié</option>                        
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" id="forminal" name="forminal" value="Envoyer">
+            <input type="reset" id="resetfo" name="resetfo" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
